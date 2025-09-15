@@ -64,7 +64,7 @@ Under Branch, select main → / (root).
 
 Save → Your site will be live at:
 
-https://bhoomika-subramanya.github.io/Interactive-Portfolio/
+https://bhoomika-subramanya.github.io/Interactive-portfolio/
 
 
 👥 Contribution
