@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Interactive Portfolio — Your Name</title>
+  <meta name="description" content="Interactive digital portfolio showcasing projects, skills and contact." />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="brand">Your<span>Portfolio</span></a>
+
+      <nav class="nav" aria-label="Main Navigation">
+        <button id="nav-toggle" aria-expanded="false" aria-controls="nav-list" class="nav-toggle">☰</button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#timeline">Timeline</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="controls">
+        <button id="theme-toggle" aria-label="Toggle theme" class="theme-btn">🌓</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero" tabindex="-1">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1 class="reveal">Hi, I'm <span id="hero-name">Your Name</span></h1>
+          <p class="lead reveal" aria-live="polite">Description about you.</p>
+          <div class="hero-ctas reveal">
+            <a class="btn" href="#projects">View Projects</a>
+            <a class="btn btn-ghost" href="#contact">Contact Me</a>
+          </div>
+        </div>
+
+        <!-- Centered profile image with zoom animation -->
+        <div class="hero-image" aria-hidden="false">
+          <div class="profile-frame" role="img" aria-label="Portrait of Your Name">
+            <img src="assets/profile-photo.jpg" alt="Portrait of Your Name" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section container reveal">
+      <h2>About Me</h2>
+      <div class="about-grid">
+        <div>
+          <p>I am an enthusiastic developer focused on front-end and interactive UI. I enjoy turning ideas into delightful digital experiences.</p>
+          <ul class="meta-list">
+            <li><strong>Location:</strong> Bangalore, India</li>
+            <li><strong>Role:</strong> AIML Student | Frontend Developer</li>
+            <li><strong>Availability:</strong> Open to internships</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Highlights</h3>
+          <ul class="bullets">
+            <li>Responsive, accessible front-end development</li>
+            <li>Interactive visualizations with vanilla JS</li>
+            <li>Clean code and maintainable design systems</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section container reveal">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <h4>HTML</h4>
+          <div class="skill-bar" data-value="95" aria-hidden="true"><span class="sr-only">95%</span></div>
+        </div>
+        <div class="skill">
+          <h4>CSS</h4>
+          <div class="skill-bar" data-value="90" aria-hidden="true"><span class="sr-only">90%</span></div>
+        </div>
+        <div class="skill">
+          <h4>JavaScript</h4>
+          <div class="skill-bar" data-value="85" aria-hidden="true"><span class="sr-only">85%</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section container reveal">
+      <h2>Projects</h2>
+      <div class="project-filters" role="tablist" aria-label="Project filters">
+        <button class="filter active" data-filter="all" role="tab">All</button>
+        <button class="filter" data-filter="web" role="tab">Web</button>
+        <button class="filter" data-filter="ml" role="tab">ML</button>
+      </div>
+      <div id="projects-grid" class="projects-grid" aria-live="polite"></div>
+    </section>
+
+    <section id="timeline" class="section container reveal">
+      <h2>Timeline</h2>
+      <ol class="timeline">
+        <li><time>2023</time><p>Current academics details</p></li>
+        <li><time>2024</time><p>Internships</p></li>
+        <li><time>2025</time><p>Major project</p></li>
+      </ol>
+    </section>
+
+    <section id="contact" class="section container reveal">
+      <h2>Contact</h2>
+      <form id="contact-form" class="contact-form" novalidate>
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required>
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required>
+        </div>
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn">Send Message</button>
+        </div>
+        <div id="form-status" role="status" aria-live="polite"></div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Your Name. Built with ❤️ — HTML, CSS, JavaScript.</p>
+      <p class="small">Designed for accessibility and performance.</p>
+    </div>
+  </footer>
+
+  <div id="project-modal" class="modal" aria-hidden="true">
+    <div class="modal-inner" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" aria-label="Close">×</button>
+      <h3 id="modal-title"></h3>
+      <p id="modal-desc"></p>
+      <div id="modal-links"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
