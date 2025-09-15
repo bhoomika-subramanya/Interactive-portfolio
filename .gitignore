@@ -1,0 +1,7 @@
+# OS & editor
+Thumbs.db
+.DS_Store
+.vscode/
+
+# node (if you later add)
+node_modules/
