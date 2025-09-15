@@ -37,7 +37,7 @@ portfolio/
 
 ⚙️ Setup & Usage
 1. Clone this repository
-git clone git clone https://github.com/bhoomika-subramanya/InteractivePortfolio.git
+git clone git clone https://github.com/bhoomika-subramanya/Interactive-Portfolio.git
 cd InteractivePortfolio
 
 2. Open in a browser
@@ -64,7 +64,7 @@ Under Branch, select main → / (root).
 
 Save → Your site will be live at:
 
-https://bhoomika-subramanya.github.io/InteractivePortfolio/
+https://bhoomika-subramanya.github.io/Interactive-Portfolio/
 
 
 👥 Contribution
