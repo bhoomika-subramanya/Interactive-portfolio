@@ -6,7 +6,7 @@ const data = {
     {id:'p1',title:'Project 1 name',tags:['Project 1 domain'],desc:'Description about project 1.',img:'assets/project-portfolio.jpg',links:[{label:'Live',url:'#'},{label:'Code',url:'#'}]},
     {id:'p2',title:'Project 2 name',tags:['Project 2 domain'],desc:'Description about project 2.',img:'assets/project-phish.jpg',links:[{label:'Paper',url:'#'},{label:'Repo',url:'#'}]}
   ],
-  contactEndpoint: 'FORM_ENDPOINT' // replace with Formspree or server endpoint
+  contactEndpoint: 'https://formspree.io/f/xwpngljp'
 };
 
 // ----------------- DOM refs -----------------
